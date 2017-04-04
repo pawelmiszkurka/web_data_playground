@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  
+Module: Web Data with XML, JSON and AJAX
+( Tutor Marked Assignment )
+Date: 19 Jan 2017
+Student: Pawel Miszkurka
+Number: 130007376
+-->
+
+<?xml-stylesheet type="text/xsl" href="http://titan.dcs.bbk.ac.uk/~pmiszk01/wd/wdtma/recipes.xsl"?>
+<recipes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://titan.dcs.bbk.ac.uk/~pmiszk01/wd/wdtma/recipes.xsd">
+    <recipe id="1">
+        <image>images/omlet.jpg</image>
+        <title>Cheesy mushroom omelette</title>
+        <description>Whip up a tasty omelette with this recipe</description>
+        <prepTime unit="minutes">5</prepTime>
+        <cookingTime unit="minutes">10</cookingTime>
+		<difficulty>Easy</difficulty>
+        <servings type="serving">Serves 1 person</servings>
+        <ingredients> 
+            <ingredient amount="1" unit="tbsp">Olive Oil</ingredient>
+        	<ingredient amount="1">Handfull button or chestnut mushrooms, sliced</ingredient>
+        	<ingredient amount="25" unit="grams">Vegetarian cheddar, grated</ingredient>
+        	<ingredient amount="1">Small handful parsley leaves, roughly chopped</ingredient>
+        	<ingredient amount="2">Eggs beaten</ingredient>
+        </ingredients>        
+    </recipe>
+    <recipe id="2">
+        <image>images/sirloin.jpg</image>
+        <title>Roast sirloin of beef</title>
+        <description>Gary Rhodes&apos; delicious, succulent roast beef dish is perfect for Boxing Day lunch or an alternative Christmas Day roast. Just four ingredients</description>
+        <prepTime unit="minutes">10</prepTime>
+        <cookingTime unit="minutes">150</cookingTime>
+        <difficulty>Easy</difficulty>
+        <servings type="serving">Serves 6 people</servings>
+        <ingredients> 
+            <ingredient amount="2" unit="tbsp">Vegetable oil or beef fat</ingredient>
+            <ingredient amount="1.5" unit="kg">Sirloin of beef joint</ingredient>
+            <ingredient amount="1" unit="glass">Red Wine</ingredient>
+            <ingredient amount="400" unit="grams">Can beef cansome</ingredient>
+        </ingredients>        
+    </recipe>
+    <recipe id="3">
+        <image>images/haddock.jpg</image>
+        <title>Haddock &amp; leek au gratin with sweetcorn mash</title>
+        <description>Leek and spinach are layered up with white fish fillets and cheese sauce then topped with golden mash in this delicious, low-fat oven bake.</description>
+        <prepTime unit="minutes">10</prepTime>
+        <cookingTime unit="minutes">50</cookingTime>
+        <difficulty>Easy</difficulty>
+        <servings type="serving">Serves 2 people</servings>
+        <ingredients> 
+            <ingredient amount="350" unit="grams">Pottatoes quartered</ingredient>
+            <ingredient amount="195">Can sweetcorn in water</ingredient>
+            <ingredient amount="240" unit="grams">Bag ready-washed spinach</ingredient>
+            <ingredient amount="2">Leeks, thickly sliced</ingredient>
+            <ingredient amount="300" unit="ml">Skimmed milk</ingredient>
+            <ingredient amount="15" unit="grams">Unsalted butter</ingredient>
+            <ingredient amount="1.5">English Mustard</ingredient>
+            <ingredient amount="75g" unit="grams">Mature reduced-fat cheese, grated</ingredient>
+            <ingredient amount="250" unit="g">Fillets of skinless haddock</ingredient>
+        </ingredients>        
+    </recipe>
+</recipes>

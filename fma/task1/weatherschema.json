@@ -1,0 +1,26 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Weather Data",
+    "description": "Records of weather conditions in UK Cities",
+	"type" : "object",
+	"properties" : {
+		"conditions" : {
+		"type" : "array", 
+			"items" : { 
+				"type" : "object",
+				"properties" : { 
+					"city_id" : { "type": "integer", "minimum": 0.00  },
+					"city_name" : { "type" : "string" },
+					"current_conditions" : { "type" : "string", "enum": ["Southerly", "South Westerly", "Westerly", "North Westerly", "Northerly", "North Easterly", "Easterly", "South Easterly"] },
+					"temperature" : { "type": "integer"  },
+					"wind_speed" : { "type" : "integer", "minimum": 0 },
+					"wind_direction" : { "type" : "string", "enum": ["northern", "southern", "eastern", "western",] },
+					"wind_chill_factor"	: { "type" : "string" }
+				}
+			}
+		}
+	}
+}
+
+
+

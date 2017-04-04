@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--  
+Module: Web Data with XML, JSON and AJAX
+( Tutor Marked Assignment )
+Date: 19 Jan 2017
+Student: Pawel Miszkurka
+Number: 130007376
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Definition of the root element  -->
+<xs:element name="recipes">
+   <xs:complexType>
+	  <xs:sequence>
+		 <xs:element name="recipe" type="recipeType" minOccurs="1" maxOccurs="unbounded" />
+	  </xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<!-- 
+Definitions: 
+	image, 
+	title, 
+	description, 
+	prepTime, 
+	cookingTime,
+	servings,
+	ingredients.
+-->
+<xs:complexType name="recipeType">
+	<xs:sequence>
+		
+		<!-- Define simple elements with name -->
+		<xs:element name="image" type="xs:string"/>
+		<xs:element name="title" type="xs:string"/>
+		<xs:element name="description" type="xs:string"/>
+		
+		<!-- Complex element which contains only attributes and text -->
+		<xs:element name="prepTime">
+			<xs:complexType>
+				<xs:simpleContent>
+					<xs:extension base="xs:positiveInteger">
+						<!-- 'unit' for the element: 'prepTime'. must be an integer -->
+						<xs:attribute name="unit" use="required"/>
+					</xs:extension>
+				</xs:simpleContent>
+			</xs:complexType>
+		</xs:element>
+		
+		<!-- Complex element which contains only attributes and text -->
+		<xs:element name="cookingTime" minOccurs="0">
+			<xs:complexType>
+				<xs:simpleContent>
+					<xs:extension base="xs:positiveInteger">
+						<!-- 'cookingTime'. This attribute is required and must be an integer -->
+						<xs:attribute name="unit" type="xs:string" use="required"/>
+					</xs:extension>
+				</xs:simpleContent>
+			</xs:complexType>
+		</xs:element>
+		
+		<!-- Allow only the following values to be entered for the recipe
+		difficulty levels -->
+		<xs:element name="difficulty">
+			<xs:simpleType>
+				<!-- Restrictions on values: Only the following enums are allowed. -->
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Easy"/>
+					<xs:enumeration value="More Effort"/>
+					<xs:enumeration value="A Challenge"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		
+		<!-- Complex element which contains attributes and text -->
+		<xs:element name="servings">
+			<xs:complexType>
+				<xs:simpleContent>
+					<xs:extension base="xs:string">
+						<!-- This attribute is optional of type string.  -->
+						<xs:attribute name="type" use="optional"/>
+					</xs:extension>
+				</xs:simpleContent>
+			</xs:complexType>
+		</xs:element>
+		
+		<!-- Define element of type 'ingredientType'.-->
+		<xs:element name="ingredients" type="ingredientType" minOccurs="1" maxOccurs="unbounded"/>
+		
+	</xs:sequence>
+	
+	<!--  'id' for the element: 'servings'.  -->
+	<xs:attribute name="id" type="xs:positiveInteger"/>
+	
+</xs:complexType>
+
+<!-- 'ingredientType' -->
+<xs:complexType name="ingredientType">
+	<xs:sequence>
+		<xs:element name="ingredient" minOccurs="1" maxOccurs="unbounded">
+			<xs:complexType>
+				<xs:simpleContent>
+					<xs:extension base="xs:string">
+						<!-- attributes for the element.  -->
+						<xs:attribute name="amount" type="xs:decimal" use="optional"/>
+						<xs:attribute name="unit" type="xs:string" use="optional"/>
+					</xs:extension>
+				</xs:simpleContent>
+			</xs:complexType>
+		</xs:element>
+	</xs:sequence>
+</xs:complexType>
+
+</xs:schema>

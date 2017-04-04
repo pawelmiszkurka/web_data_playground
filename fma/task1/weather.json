@@ -1,0 +1,51 @@
+{
+    "conditions": [{
+        "city_id": 1,
+        "city_name": "London",
+        "current_conditions": "snowy",
+        "temperature": -1,
+        "wind_speed": 3,
+        "wind_direction": "South Westerly",
+        "wind_chill_factor": "-2"
+    }, {
+        "city_id": 2,
+        "city_name": "Birmingham",
+        "current_conditions": "rainy",
+        "temperature": 3,
+        "wind_speed": 30,
+        "wind_direction": "Southerly",
+        "wind_chill_factor": "-3"
+    }, {
+        "city_id": 3,
+        "city_name": "Leeds",
+        "current_conditions": "cloudy",
+        "temperature": 6,
+        "wind_speed": 12,
+        "wind_direction": "North Westerly",
+        "wind_chill_factor": "3"
+    }, {
+        "city_id": 4,
+        "city_name": "Brighton",
+        "current_conditions": "windy",
+        "temperature": 2,
+        "wind_speed": 44,
+        "wind_direction": "Easterly",
+        "wind_chill_factor": "-5"
+    }, {
+        "city_id": 5,
+        "city_name": "Horsham",
+        "current_conditions": "cloudy",
+        "temperature": 1,
+        "wind_speed": 23,
+        "wind_direction": "North Easterly",
+        "wind_chill_factor": "-4"
+    }, {
+        "city_id": 6,
+        "city_name": "Glasgow",
+        "current_conditions": "snowy",
+        "temperature": 0,
+        "wind_speed": 0,
+        "wind_direction": "South Westerly",
+        "wind_chill_factor": "13"
+    }]
+}

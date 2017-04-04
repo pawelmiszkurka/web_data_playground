@@ -1,0 +1,29 @@
+body {
+font-family: Tahoma, arial, sans-serif;
+}
+
+h1 {color: #333333;}
+
+table {
+border-collapse: collapse;
+}
+  
+th { 
+background-color: #F0F8FF;
+border-top: solid 2px #333333;
+border-bottom: solid 2px #333333;
+}
+
+td {
+padding: 0.25em;
+}
+
+tr {
+border-bottom: solid 1px #999;
+}
+
+.score {
+background-color: #999;
+font-weight: bold;
+}
+
